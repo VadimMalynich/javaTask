@@ -1,4 +1,4 @@
-package by.rabota.vjt.bean;
+package by.rabota.vjt.service;
 
 import java.util.Comparator;
 import java.util.List;

@@ -1,11 +1,9 @@
 package by.rabota.vjt.service.impl;
 
-import by.rabota.vjt.bean.DataComparator;
+import by.rabota.vjt.service.DataComparator;
 import by.rabota.vjt.bean.FileData;
 import by.rabota.vjt.service.ServiceException;
 import by.rabota.vjt.service.SortingDataService;
-
-import java.util.List;
 
 public class SortingDataServiceImpl implements SortingDataService {
     @Override

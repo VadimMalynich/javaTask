@@ -3,11 +3,8 @@ package by.rabota.vjt.dao.impl;
 import by.rabota.vjt.bean.FileData;
 import by.rabota.vjt.dao.DaoException;
 import by.rabota.vjt.dao.FilesDao;
-import sun.rmi.runtime.NewThreadAction;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

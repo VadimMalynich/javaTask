@@ -5,7 +5,6 @@ import by.rabota.vjt.service.FilesService;
 import by.rabota.vjt.service.ServiceException;
 import by.rabota.vjt.service.ServiceFactory;
 import by.rabota.vjt.service.SortingDataService;
-import com.sun.org.apache.bcel.internal.generic.NEW;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
