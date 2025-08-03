@@ -1,5 +1,8 @@
 package com.leecode.task5;
 
+/**
+ * Given a string s, return the longest palindromic substring in s.
+ */
 public class LongestPalindromicSubstring {
     private String string;
 

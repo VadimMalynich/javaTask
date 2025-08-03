@@ -1,5 +1,17 @@
 package com.leecode.task6;
 
+/**
+ * The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+ * <p>
+ * P   A   H   N
+ * A P L S I I G
+ * Y   I   R
+ * And then read line by line: "PAHNAPLSIIGYIR"
+ * <p>
+ * Write the code that will take a string and make this conversion given a number of rows:
+ * <p>
+ * string convert(string s, int numRows);
+ */
 public class ZigzagConversion {
     public String convert(String s, int numRows) {
         if (numRows == 1 || s.length() == 1 || s.length() == numRows) {
@@ -10,6 +22,7 @@ public class ZigzagConversion {
         int arrIndex = 0;
         boolean isUp = false;
         int fillIndex = numRows - 1;
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < numColumns; i++) {
             if (isUp && fillIndex > 1) {
                 fillIndex--;
@@ -30,15 +43,14 @@ public class ZigzagConversion {
                 fillIndex = numRows - 1;
             }
         }
-        String result = "";
         for (char[] chars : arr) {
             for (char aChar : chars) {
                 if (aChar != '\u0000') {
-                    result +=  aChar ;
+                    result.append(aChar);
                 }
             }
         }
-        return result;
+        return result.toString();
     }
 
     public static int calculateWidth(String s, int numRows) {
